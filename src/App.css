@@ -36,3 +36,62 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+.inactive {
+  /* Variables for each item */
+  --grid-pos: 0;
+  --color: white;
+  --previous-color: white;
+
+  /* Positioning */
+  position: relative; 
+  justify-self: center;
+  align-self: center;
+
+  /* Animation values */
+  animation-name: activate;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--grid-pos) * 75ms);
+
+  /* Styling */
+  width: 100%;
+  aspect-ratio: 1;
+  border-width: 1px;
+  box-shadow: 1px 1px 3px gray;
+  background-color: var(--previous-color);
+}
+
+#grid {
+  display: grid;
+  background-color: white;
+  border-style: solid;
+  height: 90%;
+  aspect-ratio: 1;
+}
+
+.start {
+  background-color: #52a44a;
+  animation-delay: 75ms;
+}
+
+.end {
+  background-color: #417b41;
+  animation-delay: 75ms;
+}
+
+.wall {
+  background-color: brown;
+  animation-delay: 75ms;
+}
