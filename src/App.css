@@ -41,57 +41,77 @@ html {
   height: 100%;
 }
 #root {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 body {
+  display: flex;
+  justify-content: center;
   height: 100%;
 }
+
 .inactive {
-  /* Variables for each item */
-  --grid-pos: 0;
-  --color: white;
-  --previous-color: white;
-
-  /* Positioning */
-  position: relative; 
-  justify-self: center;
-  align-self: center;
-
-  /* Animation values */
-  animation-name: activate;
-  animation-duration: 500ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: calc(var(--grid-pos) * 75ms);
-
   /* Styling */
   width: 100%;
   aspect-ratio: 1;
-  border-width: 1px;
+  /* border-width: 1px; */
   box-shadow: 1px 1px 3px gray;
   background-color: var(--previous-color);
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "p . input"
+                       "astar . dfs";
+}
+
+#menu > input {
+  grid-area: input;
+}
+
+#menu > .astar {
+  grid-area: astar;
+}
+
+#menu > .dfs {
+  grid-area: dfs;
 }
 
 #grid {
   display: grid;
   background-color: white;
   border-style: solid;
-  height: 90%;
+  height: 70%;
+  margin-top: 5%;
   aspect-ratio: 1;
 }
 
 .start {
   background-color: #52a44a;
-  animation-delay: 75ms;
+  box-shadow: 1px 1px 3px gray;
 }
 
 .end {
   background-color: #417b41;
-  animation-delay: 75ms;
+  box-shadow: 1px 1px 3px gray;
 }
 
 .wall {
   background-color: brown;
-  animation-delay: 75ms;
+  box-shadow: 1px 1px 3px gray;
 }
+
+.path {
+  background-color: turquoise;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.explored {
+  background-color: lightyellow;
+  box-shadow: 1px 1px 3px gray;
+}
+
