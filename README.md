@@ -5,13 +5,13 @@ A rebuilt version of my [previous project](https://github.com/Woosiv/SearchVisua
 I wanted to find an opportunity to learn how the React library works, so I decided to rebuild a project with it for learning purposes. 
 
 ## Currently Implemented
-[x] A* search
-[x] DFS search
+- [x] A* search
+- [x] DFS search
 
 ## Planned Features
-[ ] More searches
-[ ] Description of how the site works
-[ ] Animations from the previous rendition
+- [ ] More searches
+- [ ] Description of how the site works
+- [ ] Animations from the previous rendition
 
 
 <!-- # Getting Started with Create React App
