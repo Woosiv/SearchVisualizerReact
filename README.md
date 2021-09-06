@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# React Search Visualizer
+A rebuilt version of my [previous project](https://github.com/Woosiv/SearchVisualizers) built with the React library.
+
+## Why?
+I wanted to find an opportunity to learn how the React library works, so I decided to rebuild a project with it for learning purposes. 
+
+## Currently Implemented
+[x] A* search
+[x] DFS search
+
+## Planned Features
+[ ] More searches
+[ ] Description of how the site works
+[ ] Animations from the previous rendition
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +83,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
